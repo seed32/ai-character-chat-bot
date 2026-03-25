@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  ai-bot:
+    build: .
+    container_name: ai-character-bot
+    restart: always
+    volumes:
+      - ./data:/app/data
+      # .env 파일을 볼륨으로 연결하고 싶다면 아래 주석을 해제하세요.
+      # - ./.env:/app/.env
+    environment:
+      - TZ=Asia/Seoul
+      - PYTHONUNBUFFERED=1

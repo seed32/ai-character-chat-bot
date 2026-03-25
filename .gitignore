@@ -1,0 +1,11 @@
+.env
+data/
+*.db
+*.tar
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+node_modules/
+.DS_Store
