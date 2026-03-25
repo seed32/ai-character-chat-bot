@@ -49,6 +49,6 @@ def build_spontaneous_prompt(rolling_summary: str, current_time: str) -> list[di
     memory_context = f"\n\n[Summary]\n{rolling_summary if rolling_summary else 'No history.'}"
     messages: list[dict] = [
         {"role": "system", "content": system_instruction + memory_context},
-        {"role": "user", "content": "Start a short, spontaneous conversation based on your persona and the user's history."}
+        {"role": "user", "content": {settings.spontaneous_conversation}}
     ]
     return messages

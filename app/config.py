@@ -52,6 +52,7 @@ class Settings:
     spontaneous_chance: float = field(default_factory=lambda: float(os.getenv("SPONTANEOUS_CHANCE", "0.1")))
     spontaneous_start_hour: int = field(default_factory=lambda: int(os.getenv("SPONTANEOUS_START_HOUR", "10")))
     spontaneous_end_hour: int = field(default_factory=lambda: int(os.getenv("SPONTANEOUS_END_HOUR", "22")))
+    spontaneous_conversation: str = field(default_factory=lambda: os.getenv("SPONTANEOUS_CONVERSATION", "Start a short, spontaneous conversation based on your persona and the user's history."))
 
     # [Memory Settings]
     memory_keep_recent_messages: int = field(default_factory=lambda: int(os.getenv("MEMORY_KEEP_RECENT_MESSAGES", "20")))
