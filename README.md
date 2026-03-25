@@ -88,6 +88,7 @@ python -m app.main
 ### 🇺🇸 Optimized for Synology NAS via Docker.
 ### 🇰🇷 시놀로지 NAS 도커 배포에 최적화되어 있습니다.
 
+- [Detailed Setup Guide (English/한국어)](docs/SETUP_GUIDE.md)
 - [Build & Deploy Guide (English/한국어)](docs/BUILD_AND_DEPLOY_GUIDE.md)
 - [Detailed Setup Checklist (English/한국어)](docs/DISCORD_SETUP_CHECKLIST.md)
 - [Input & Persona Guide (English/한국어)](docs/INPUT_GUIDE.md)
